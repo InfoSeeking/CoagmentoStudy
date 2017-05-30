@@ -22,9 +22,21 @@
     <div class="radio">
       <label><input type="radio" name="gender" value="female">Female</label>
     </div>
+    
       
       <button type = "submit" class = "btn btn-default">Submit</button>
   </form>
+            
+<p>Search Sources:</p>
+            <div class="checkbox">
+      <label><input type="checkbox" value="">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Option 3</label>
+    </div>
 </div>
         
 <!--        <h1>Hello</h1>-->
