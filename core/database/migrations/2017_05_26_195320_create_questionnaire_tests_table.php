@@ -16,12 +16,7 @@ class CreateQuestionnaireTestsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->enum('gender', ['male', 'female']);
-//            $table->enum('searchSource', ['Google', 'Yahoo', 'Bing', 'Firefox']);
         });
-        
-//        Schema::table('questionnaire_tests', function (Blueprint $table) {
-//            $table->enum('searchSource', ['Google', 'Yahoo', 'Bing', 'Firefox']);
-//        });
     }
 
     /**

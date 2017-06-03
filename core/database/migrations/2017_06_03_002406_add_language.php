@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSearchSourcesToQuestionnaireTestsTable extends Migration
+class AddLanguage extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,7 @@ class AddSearchSourcesToQuestionnaireTestsTable extends Migration
     public function up()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->enum('searchSource', ['Google', 'Yahoo', 'Bing', 'Firefox']) ->nullable();
-//            $table->boolean('searchSource') ->nullable();
+            $table->mediumText('language') ->nullable();
         });
     }
 
@@ -26,7 +25,7 @@ class AddSearchSourcesToQuestionnaireTestsTable extends Migration
     public function down()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->dropColumn('searchSource');
+            $table->dropColumn('language');
         });
     }
 }

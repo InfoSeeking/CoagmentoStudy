@@ -25,19 +25,26 @@
       
     <p>Search Sources:</p>
     <div class="checkbox">
-      <label><input type="checkbox" value="">Google</label>
+      <label><input type="checkbox" name="searchSource[]" value="google">Google</label>
     </div>
     <div class="checkbox">
-      <label><input type="checkbox" value="">Yahoo</label>
+      <label><input type="checkbox" name="searchSource[]" value="yahoo">Yahoo</label>
     </div>
     <div class="checkbox">
-      <label><input type="checkbox" value="">Bing</label>
+      <label><input type="checkbox" name="searchSource[]" value="bing">Bing</label>
     </div>
-    <div class="checkbox disabled">
-      <label><input type="checkbox" value="">FireFox</label>
+    <div class="checkbox">
+      <label><input type="checkbox" name="searchSource[]" value="firefox">FireFox</label>
     </div>
       
-      <button type = "submit" class = "btn btn-default">Submit</button>
+    Language Used:<br>
+    <input type="text" name="language" value="">
+      
+    
+    
+      <br><br>
+      
+      <button type = "submit" class = "btn btn-default[]">Submit</button>
   </form>
             
 </div>
