@@ -13,7 +13,7 @@ class AddLanguage extends Migration
     public function up()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->mediumText('language') ->nullable();
+            $table->string('language') ->nullable();
         });
     }
 

@@ -13,41 +13,51 @@
         
         <div class="container">
   <h2>Questionnaire</h2>
-  <p>Gender:</p>
-  <form method="POST" action="/questionnaire">
-      {{ csrf_field() }}
-    <div class="radio">
-      <label><input type="radio" name="gender" value="male">Male</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="gender" value="female">Female</label>
-    </div>
-      
-    <p>Search Sources:</p>
-    <div class="checkbox">
-      <label><input type="checkbox" name="searchSource[]" value="google">Google</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="searchSource[]" value="yahoo">Yahoo</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="searchSource[]" value="bing">Bing</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="searchSource[]" value="firefox">FireFox</label>
-    </div>
-      
-    Language Used:<br>
-    <input type="text" name="language" value="">
-      
-    
-    
-      <br><br>
-      
-      <button type = "submit" class = "btn btn-default[]">Submit</button>
-  </form>
             
-</div>
+            <p>Gender:</p>
+            <form method="POST" action="/questionnaire">
+                {{ csrf_field() }}
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                </div>
+                
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+                
+            <p>Search Sources:</p>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="searchSource[]" value="google">Google</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="searchSource[]" value="yahoo">Yahoo</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="searchSource[]" value="bing">Bing</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="searchSource[]" value="firefox">FireFox</label>
+                </div>
+                
+            <p>Languge Used:</p>
+                <div class="form-group">
+                    <input type="text" name="language">
+                </div>
+                
+                
+<!--
+                Language Used:<br>
+                <input type="text" class="form-control" name="language" value="">
+-->
+                
+                
+                <br><br>
+                
+                <button type = "submit" class = "btn btn-default[]">Submit</button>
+                
+            </form>
+            
+        </div>
         
 <!--        <h1>Hello</h1>-->
     
