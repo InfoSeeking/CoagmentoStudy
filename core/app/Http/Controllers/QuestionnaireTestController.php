@@ -48,7 +48,7 @@ class QuestionnaireTestController extends Controller
         
         $post -> language = request("language");
         
-        $post -> language = request("language");
+        $post -> searchTasks = request("searchTasks");
 
         //add here
 

@@ -25,6 +25,8 @@
                     <label><input type="radio" name="gender" value="female">Female</label>
                 </div>
                 
+                <br><br>
+                
             <p>Search Sources:</p>
                 <div class="checkbox">
                     <label><input type="checkbox" name="searchSource[]" value="google">Google</label>
@@ -39,11 +41,23 @@
                     <label><input type="checkbox" name="searchSource[]" value="firefox">FireFox</label>
                 </div>
                 
+                <br><br>
+                
             <p>Languge Used:</p>
                 <div class="form-group">
                     <input type="text" name="language">
                 </div>
                 
+                <br><br>
+            
+            <p>Describe the search tasks you do on a daily basis:</p>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" name="searchTasks"></textarea>
+                </div>
+                
+                <br><br>
+                
+            
                 
 <!--
                 Language Used:<br>
