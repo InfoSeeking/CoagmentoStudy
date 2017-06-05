@@ -43,16 +43,13 @@ class QuestionnaireTestController extends Controller
         $post = new QuestionnaireTest;
 
         $post -> gender = request("gender");
-<<<<<<< HEAD
         
         $post -> searchSource = request("searchSource[]");
         
         $post -> language = request("language");
         
-=======
         $post -> language = request("language");
 
->>>>>>> origin/master
         //add here
 
         $post -> save();
