@@ -41,13 +41,14 @@ class QuestionnaireTestController extends Controller
         //
 //        dd(request() -> all ());
         $post = new QuestionnaireTest;
-        
+
         $post -> gender = request("gender");
-        
+        $post -> language = request("language");
+
         //add here
-        
+
         $post -> save();
-        
+
         return redirect('/questionnaire');
     }
 
