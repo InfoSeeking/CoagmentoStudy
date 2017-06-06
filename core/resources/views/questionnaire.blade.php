@@ -60,7 +60,7 @@
 <!--            <p>Select Your Year in College:</p>-->
             <div class="form-group">
                 <label for="sel1">Select Year in College:</label>
-                <select class="form-control" id="sel1">
+                <select class="form-control" name="collegeYear">
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
@@ -87,7 +87,6 @@
                 Language Used:<br>
                 <input type="text" class="form-control" name="language" value="">
 -->
-                
                 
                 <br><br>
                 
