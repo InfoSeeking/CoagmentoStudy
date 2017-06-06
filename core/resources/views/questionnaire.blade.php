@@ -57,6 +57,30 @@
                 
                 <br><br>
                 
+<!--            <p>Select Your Year in College:</p>-->
+            <div class="form-group">
+                <label for="sel1">Select Year in College:</label>
+                <select class="form-control" id="sel1">
+                    <option>Freshman</option>
+                    <option>Sophomore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                </select>
+                <br>
+            </div>
+                
+            <br><br>
+                
+            <div class="form-group">
+                <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+                <select multiple class="form-control" id="sel2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
             
                 
 <!--
