@@ -8,25 +8,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    
+
     <body>
-        
+
         <div class="container">
   <h2>Questionnaire</h2>
-            
+
             <p>Gender:</p>
             <form method="POST" action="/questionnaire">
                 {{ csrf_field() }}
                 <div class="radio">
                     <label><input type="radio" name="gender" value="male">Male</label>
                 </div>
-                
+
                 <div class="radio">
                     <label><input type="radio" name="gender" value="female">Female</label>
                 </div>
-                
+
                 <br><br>
-                
+
             <p>Search Sources:</p>
                 <div class="checkbox">
                     <label><input type="checkbox" name="searchSource[]" value="google">Google</label>
@@ -40,27 +40,27 @@
                 <div class="checkbox">
                     <label><input type="checkbox" name="searchSource[]" value="firefox">FireFox</label>
                 </div>
-                
+
                 <br><br>
-                
+
             <p>Languge Used:</p>
                 <div class="form-group">
                     <input type="text" name="language">
                 </div>
-                
+
                 <br><br>
-            
+
             <p>Describe the search tasks you do on a daily basis:</p>
                 <div class="form-group">
                     <textarea class="form-control" rows="5" name="searchTasks"></textarea>
                 </div>
-                
+
                 <br><br>
-                
+
 <!--            <p>Select Your Year in College:</p>-->
             <div class="form-group">
                 <label for="sel1">Select Year in College:</label>
-                <select class="form-control" name="collegeYear">
+                <select class="form-control" id="sel1" name="collegeYear">
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
@@ -68,9 +68,9 @@
                 </select>
                 <br>
             </div>
-                
+
             <br><br>
-                
+
             <div class="form-group">
                 <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
                 <select multiple class="form-control" id="sel2">
@@ -81,23 +81,23 @@
                     <option>5</option>
                 </select>
             </div>
-            
-                
+
+
 <!--
                 Language Used:<br>
                 <input type="text" class="form-control" name="language" value="">
 -->
-                
+
                 <br><br>
-                
+
                 <button type = "submit" class = "btn btn-default[]">Submit</button>
-                
+
             </form>
-            
+
         </div>
-        
+
 <!--        <h1>Hello</h1>-->
-    
+
     </body>
 
 </html>
