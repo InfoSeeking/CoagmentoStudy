@@ -73,7 +73,7 @@
 
             <div class="form-group">
                 <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
-                <select multiple class="form-control" id="sel2">
+                <select multiple class="form-control" name="seach_sources_v2[]">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
