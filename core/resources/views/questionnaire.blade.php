@@ -81,6 +81,49 @@
                     <option>5</option>
                 </select>
             </div>
+                
+            <br><br>
+                
+            
+            <p>Rate the difficulty level of the task.</p>
+                <div class="row">
+                    <div class="col-xs-1" style="background-color:lavender;">Not at all Difficult</div>
+                    <div class="col-xs-1" style="background-color:lavender;">Somewhat Difficult</div>
+                    <div class="col-xs-1" style="background-color:lavender;">Test</div>
+                    <div class="col-xs-1" style="background-color:lavender;">.col-sm-4</div>
+                    <div class="col-xs-1" style="background-color:lavender;">Extremely Difficult</div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    </div>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    </div>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    </div>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    </div>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    </div>
+                </div>
+                
+                
+<!--
+            <div class="container">
+  <p>The form below contains three inline radio buttons:</p>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 2
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 3
+    </label>
+  </form>
+</div>
+-->
 
 
 <!--
@@ -95,8 +138,6 @@
             </form>
 
         </div>
-
-<!--        <h1>Hello</h1>-->
 
     </body>
 
