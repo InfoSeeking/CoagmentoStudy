@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSearchSourcesV2ToQuestionnaireTestsTable extends Migration
+class AddTaskDifficulty extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,7 @@ class AddSearchSourcesV2ToQuestionnaireTestsTable extends Migration
     public function up()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->implode(',', Input::get('search_sources_v2[]'));
-            $table->save();
+            $table->boolean
         });
     }
 
@@ -26,7 +25,7 @@ class AddSearchSourcesV2ToQuestionnaireTestsTable extends Migration
     public function down()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table ->dropColumn('search_sources_v2[]');
+            $table->dropColumns('task_difficulty');
         });
     }
 }

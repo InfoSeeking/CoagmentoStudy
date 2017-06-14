@@ -40,7 +40,15 @@ class QuestionnaireTestController extends Controller
     {
         //
 //        dd(request() -> all ());
+        
         $post = new QuestionnaireTest;
+        
+        //validaiton:
+        
+        $this->validate($request, [
+        'title' => 'required|unique:posts|max:255',
+        'body' => 'required',
+        ]);
 
         $post -> gender = request("gender");
 

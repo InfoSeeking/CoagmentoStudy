@@ -95,15 +95,15 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="optradio"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
                     </div>
                 </div>
                 
