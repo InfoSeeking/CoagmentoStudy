@@ -13,8 +13,8 @@ class AddSearchSourcesV2ToQuestionnaireTestsTable extends Migration
     public function up()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->implode(',', Input::get('search_sources_v2[]'));
-            $table->save();
+//            $table->implode(',', Input::get('search_sources_v2[]'));
+//            $table->save();
         });
     }
 

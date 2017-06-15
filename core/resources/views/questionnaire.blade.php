@@ -89,21 +89,21 @@
                 <div class="row">
                     <div class="col-xs-1" style="background-color:lavender;">Not at all Difficult</div>
                     <div class="col-xs-1" style="background-color:lavender;">Somewhat Difficult</div>
-                    <div class="col-xs-1" style="background-color:lavender;">Test</div>
-                    <div class="col-xs-1" style="background-color:lavender;">.col-sm-4</div>
+                    <div class="col-xs-1" style="background-color:lavender;">Medium</div>
+                    <div class="col-xs-1" style="background-color:lavender;">Very Difficult</div>
                     <div class="col-xs-1" style="background-color:lavender;">Extremely Difficult</div>
                 </div>
                 
                 <div class="row">
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="not_difficult"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="somewhat_difficult"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="medium"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="very_difficult"></center>
                     </div>
-                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty"></center>
+                    <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="extremely_difficult"></center>
                     </div>
                 </div>
                 

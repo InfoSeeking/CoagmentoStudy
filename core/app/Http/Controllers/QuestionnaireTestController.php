@@ -45,10 +45,10 @@ class QuestionnaireTestController extends Controller
         
         //validaiton:
         
-        $this->validate($request, [
-        'title' => 'required|unique:posts|max:255',
-        'body' => 'required',
-        ]);
+//        $this->validate($request, [
+//        'title' => 'required|unique:posts|max:255',
+//        'body' => 'required',
+//        ]);
 
         $post -> gender = request("gender");
 
