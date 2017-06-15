@@ -10,8 +10,7 @@ class AddCollegeYearToQuestionnaireTestsTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
             $table->enum('collegeYear', ['freshamn', 'sophomore', 'junior', 'senior']) ->nullable();
         });
@@ -22,8 +21,7 @@ class AddCollegeYearToQuestionnaireTestsTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
             $table ->dropColumn('collegeYear');
         });

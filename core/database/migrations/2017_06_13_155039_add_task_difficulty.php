@@ -25,7 +25,7 @@ class AddTaskDifficulty extends Migration
     public function down()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->dropColumns('task_difficulty');
+            $table->dropColumn('task_difficulty');
         });
     }
 }

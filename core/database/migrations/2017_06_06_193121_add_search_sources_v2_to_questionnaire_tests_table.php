@@ -10,11 +10,9 @@ class AddSearchSourcesV2ToQuestionnaireTestsTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-//            $table->implode(',', Input::get('search_sources_v2[]'));
-//            $table->save();
+            $table->string('search_sources_v2') -> nullable();
         });
     }
 
@@ -23,10 +21,9 @@ class AddSearchSourcesV2ToQuestionnaireTestsTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table ->dropColumn('search_sources_v2[]');
+            $table ->dropColumn('search_sources_v2');
         });
     }
 }

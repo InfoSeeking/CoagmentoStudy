@@ -10,8 +10,7 @@ class CreateQuestionnaireTestsTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('questionnaire_tests', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
@@ -24,8 +23,7 @@ class CreateQuestionnaireTestsTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::drop('questionnaire_tests');
     }
 }
