@@ -44,11 +44,14 @@ class QuestionnaireTestController extends Controller
         $post = new QuestionnaireTest;
         
         //validaiton:
-        
-//        $this->validate($request, [
-//        'title' => 'required|unique:posts|max:255',
-//        'body' => 'required',
-//        ]);
+        $this -> validate($request, [
+            'gender' => 'required',
+            'language' => 'required',
+            'searchTasks' => 'required',
+            'collegeYear' => 'required',
+            'search_sources_v2' => 'required',
+            'task_difficulty' => 'required'
+        ]);
 
         
         $post -> gender = request("gender");

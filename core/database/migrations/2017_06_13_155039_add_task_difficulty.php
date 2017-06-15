@@ -13,7 +13,7 @@ class AddTaskDifficulty extends Migration
     public function up()
     {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->enum('task_difficulty', ['not_difficult', 'somewhat_difficult', 'medium', 'very_difficult', 'extremely_difficult']);
+            $table->enum('task_difficulty', ['not_difficult', 'somewhat_difficult', 'medium', 'very_difficult', 'extremely_difficult']) -> nullable();
         });
     }
 

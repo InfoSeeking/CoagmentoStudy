@@ -136,6 +136,19 @@
                 <button type = "submit" class = "btn btn-default[]">Submit</button>
 
             </form>
+            
+            <div class="alert alert-errror">
+                <ul>
+                
+                    @foreach($errors->all() as $error)
+                    
+                    <li>{{$error}}</li>
+                    
+                    @endforeach
+                    
+                </ul>
+            
+            </div>
 
         </div>
 
