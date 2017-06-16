@@ -81,10 +81,10 @@
                     <option>5</option>
                 </select>
             </div>
-                
+
             <br><br>
-                
-            
+
+
             <p>Rate the difficulty level of the task.</p>
                 <div class="row">
                     <div class="col-xs-1" style="background-color:lavender;">Not at all Difficult</div>
@@ -93,7 +93,7 @@
                     <div class="col-xs-1" style="background-color:lavender;">Very Difficult</div>
                     <div class="col-xs-1" style="background-color:lavender;">Extremely Difficult</div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="not_difficult"></center>
                     </div>
@@ -106,8 +106,8 @@
                     <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="extremely_difficult"></center>
                     </div>
                 </div>
-                
-                
+
+
 <!--
             <div class="container">
   <p>The form below contains three inline radio buttons:</p>
@@ -136,18 +136,54 @@
                 <button type = "submit" class = "btn btn-default[]">Submit</button>
 
             </form>
-            
-            <div class="alert alert-errror">
+
+            <!-- PHP Version 1 -->
+
+            <div class="alert alert-danger">
                 <ul>
-                
-                    @foreach($errors->all() as $error)
-                    
-                    <li>{{$error}}</li>
-                    
-                    @endforeach
-                    
+                  <?php
+                  foreach($errors->all() as $error){
+                    echo "<li>$error</li>";
+                  }
+                  ?>
                 </ul>
-            
+            </div>
+
+            <!--  PHP version 2-->
+
+            <div class="alert alert-danger">
+                <ul>
+                  <?php
+                    foreach($errors->all() as $error)
+                      {
+                      ?>
+
+                    <li>
+                      <?php
+                      echo $error;
+                      ?>
+                    </li>
+                    
+                    <?php
+                      }
+                    ?>
+
+                </ul>
+
+            </div>
+
+
+            <div class="alert alert-danger">
+                <ul>
+
+                    @foreach($errors->all() as $error)
+
+                    <li>{{$error}}</li>
+
+                    @endforeach
+
+                </ul>
+
             </div>
 
         </div>
