@@ -133,8 +133,22 @@ Route::group(['middleware' => 'api.optional.auth'], function(){
 	Route::get('api/v1/docs/{doc_id}/text', 'Api\DocController@getText');
 });
 
+//For first questionnaire
 Route::get('/questionnaire', function () {
-		return view('questionnaire');
+    return view('questionnaire');
 });
 
 Route::post('/questionnaire', 'QuestionnaireTestController@store');
+
+//For 2nd and 3rd questionnaires
+Route::get('/questionnaire2', function () {
+    return view('questionnaire2');
+});
+
+Route::post('/questionnaire2', 'QuestionnaireTestController@store');
+
+Route::get('/questionnaire3', function () {
+    return view('questionnaire2');
+});
+
+Route::post('/questionnaire3', 'QuestionnaireTestController@store');
