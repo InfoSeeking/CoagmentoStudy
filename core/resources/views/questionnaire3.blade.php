@@ -24,7 +24,7 @@
                 
             <div class="form-group">
                 <label for="sel1">Select Year in College:</label>
-                <select class="form-control" id="sel1" name="collegeYear">
+                <select class="form-control" id="sel1" name="college_year">
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
