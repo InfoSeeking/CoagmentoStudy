@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\StageProgressController;
-use App\QuestionnaireTest2;
+use App\Questionnaire2Test;
 
 class questionnaire2_test_controller extends Controller
 {
@@ -42,7 +42,7 @@ class questionnaire2_test_controller extends Controller
         //
 //        dd(request() -> all ());
         
-        $post = new QuestionnaireTest2;
+        $post = new Questionnaire2Test;
 
         //validaiton:
         $this -> validate($request, [
