@@ -14,7 +14,6 @@
         <div class="container">
   <h2>Questionnaire</h2>
 
-            <p>Gender:</p>
             <form method="POST" action="/questionnaire2">
                 {{ csrf_field() }}
 
