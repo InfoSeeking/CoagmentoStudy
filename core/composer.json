@@ -10,7 +10,8 @@
         "0x46616c6b/etherpad-lite-client": "dev-master",
         "ext-fileinfo": "*",
         "ext-gd": "*",
-        "doctrine/dbal": "^2.5"
+        "doctrine/dbal": "^2.5",
+        "laravelcollective/html": "5.1.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -17,6 +17,23 @@
             <p>Gender:</p>
             <form method="POST" action="/questionnaire">
                 {{ csrf_field() }}
+
+                <div class="form-group">
+                    {!! Form::text('username') !!}
+                </div>
+
+
+                <div class="form-group">
+                    <label for="sel3">Mutiple select list (hold shift to select more than one):</label>
+                    {!!
+                     Form::select('animal',[
+                      'Cats' => ['leopard' => 'Leopard'],
+                      'Dogs' => ['spaniel' => 'Spaniel'],
+                     ],null,array('id'=>'sel3','class'=>'form-control'))
+                     !!}
+                </div>
+
+
                 <div class="radio">
                     <label><input type="radio" name="gender" value="male">Male</label>
                 </div>
