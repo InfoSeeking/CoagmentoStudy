@@ -145,10 +145,10 @@ Route::get('/questionnaire2', function () {
     return view('questionnaire2');
 });
 
-Route::post('/questionnaire2', 'QuestionnaireTestController@store');
+Route::post('/questionnaire2', 'questionnaire2_test_controller@store');
 
 Route::get('/questionnaire3', function () {
     return view('questionnaire2');
 });
 
-Route::post('/questionnaire3', 'QuestionnaireTestController@store');
+Route::post('/questionnaire3', 'questionnaire2_test_controller@store');

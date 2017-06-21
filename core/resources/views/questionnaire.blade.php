@@ -151,6 +151,7 @@
 
             <!--  PHP version 2-->
 
+<!--
             <div class="alert alert-danger">
                 <ul>
                   <?php
@@ -185,6 +186,7 @@
                 </ul>
 
             </div>
+-->
 
         </div>
 
