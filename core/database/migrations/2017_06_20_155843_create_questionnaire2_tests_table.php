@@ -13,7 +13,7 @@ class CreateQuestionnaire2TestsTable extends Migration {
         Schema::create('questionnaire2_tests', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->enum('college_year', ['freshamn', 'sophomore', 'junior', 'senior']) ->nullable();
+            $table->enum('college_year', ['freshman', 'sophomore', 'junior', 'senior']) ->nullable();
         });
     }
 

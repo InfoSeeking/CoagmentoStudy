@@ -61,6 +61,7 @@
             <div class="form-group">
                 <label for="sel1">Select Year in College:</label>
                 <select class="form-control" id="sel1" name="collegeYear">
+                    <option disabled selected value> -- select an option -- </option>
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
@@ -107,73 +108,15 @@
                     </div>
                 </div>
 
-
-<!--
-            <div class="container">
-  <p>The form below contains three inline radio buttons:</p>
-  <form>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">Option 1
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">Option 2
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">Option 3
-    </label>
-  </form>
-</div>
--->
-
-
-<!--
-                Language Used:<br>
-                <input type="text" class="form-control" name="language" value="">
--->
-
                 <br><br>
 
-                <button type = "submit" class = "btn btn-default[]">Submit</button>
+                <button type = "submit" class = "btn btn-default">Submit</button>
 
             </form>
 
-            <!-- PHP Version 1 -->
-
-            <div class="alert alert-danger">
-                <ul>
-                  <?php
-                  foreach($errors->all() as $error){
-                    echo "<li>$error</li>";
-                  }
-                  ?>
-                </ul>
-            </div>
-
-            <!--  PHP version 2-->
-
-<!--
-            <div class="alert alert-danger">
-                <ul>
-                  <?php
-                    foreach($errors->all() as $error)
-                      {
-                      ?>
-
-                    <li>
-                      <?php
-                      echo $error;
-                      ?>
-                    </li>
-                    
-                    <?php
-                      }
-                    ?>
-
-                </ul>
-
-            </div>
 
 
+            @if(count($errors))
             <div class="alert alert-danger">
                 <ul>
 
@@ -186,7 +129,7 @@
                 </ul>
 
             </div>
--->
+            @endif
 
         </div>
 

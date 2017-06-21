@@ -46,21 +46,27 @@ class QuestionnaireTestController extends Controller
         //validaiton:
         $this -> validate($request, [
             'gender' => 'required',
+            'searchSource' => 'required',
             'language' => 'required',
             'searchTasks' => 'required',
             'collegeYear' => 'required',
+
             'search_sources_v2' => 'required',
             'task_difficulty' => 'required'
         ]);
 
         
         $post -> gender = request("gender");
+//        dd(array_values(request("searchSource")));
+//        dd(implode(',', array_values(request("searchSource"))));
 
-        $post -> searchSource = request("searchSource[]");
+//        TODO: Bug fix.  Enum probably isn't the best here...
+        $post -> searchSource = implode(',', array_values(request("searchSource")));
 
         $post -> language = request("language");
 
         $post -> searchTasks = request("searchTasks");
+
 
         $post -> collegeYear = request("collegeYear");
         

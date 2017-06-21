@@ -12,7 +12,7 @@ class AddCollegeYearToQuestionnaireTestsTable extends Migration
      */
     public function up() {
         Schema::table('questionnaire_tests', function (Blueprint $table) {
-            $table->enum('collegeYear', ['freshamn', 'sophomore', 'junior', 'senior']) ->nullable();
+            $table->enum('collegeYear', ['freshman', 'sophomore', 'junior', 'senior']) ->nullable();
         });
     }
 
