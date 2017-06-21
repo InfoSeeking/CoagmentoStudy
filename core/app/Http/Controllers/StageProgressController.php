@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Stage;
+use App\Models\StageProgress;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -16,9 +18,19 @@ class StageProgressController extends Controller
     }
 
     public function directToStage(){
-        $stageProgress = $this->stageProgressService->getCurrentStage();
-        dd($stageProgress);
-//        redirect('stages/{stage_id}'); //TODO: insert stage_id
+        $stage = $this->stageProgressService->getCurrentStage();
+        $stage->getResult();
+
+//        dd($stage->getResult());
+//        dd($stage->getResult()->page);
+        return redirect($stage->getResult()->page);
+    }
+
+    public function moveToNextStage(){
+        $this->stageProgressService->moveToNextStage();
+
+
+        return redirect('/stages');
     }
 
     /**

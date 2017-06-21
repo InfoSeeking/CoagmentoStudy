@@ -72,7 +72,7 @@ class QuestionnaireTestController extends Controller
 
         $post -> save();
 
-        return redirect('/questionnaire');
+        return redirect('/stages/next');
     }
 
     /**

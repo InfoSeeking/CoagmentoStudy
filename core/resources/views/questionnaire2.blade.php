@@ -15,7 +15,7 @@
   <h2>Questionnaire</h2>
 
             <p>Gender:</p>
-            <form method="POST" action="/questionnaire">
+            <form method="POST" action="/questionnaire2">
                 {{ csrf_field() }}
 
                 <br><br>

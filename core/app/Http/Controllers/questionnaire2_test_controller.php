@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\StageProgressController;
 use App\QuestionnaireTest;
 
 class questionnaire2_test_controller extends Controller
@@ -41,20 +42,20 @@ class questionnaire2_test_controller extends Controller
         //
 //        dd(request() -> all ());
         
-        $post = new QuestionnaireTest;
-        
-        //validaiton:
-        $this -> validate($request, [
-            'collegeYear' => 'required',
-        ]);
+//        $post = new QuestionnaireTest;
+//
+//        //validaiton:
+//        $this -> validate($request, [
+//            'collegeYear' => 'required',
+//        ]);
+//
+//        $post -> collegeYear = request("college_year");
+//
+//        //add here
+//
+//        $post -> save();
 
-        $post -> collegeYear = request("college_year");
-
-        //add here
-
-        $post -> save();
-
-        return redirect('/questionnaire2');
+        return redirect('/stages/next');
     }
 
     /**
