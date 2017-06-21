@@ -17,6 +17,9 @@ use Illuminate\Http\Request;
 Route::get('/', 'SplashController@index');
 Route::get('/new', 'SplashController@index');
 Route::post('/new/notify', 'SplashController@notify');
+Route::get('/confirm', function(){
+    return view('auth.confirm');
+});
 
 
 // Authentication.
@@ -39,8 +42,12 @@ Route::post('sidebar/auth/login', 'SidebarController@postLoginWithOldCoagmentoSu
 Route::get('sidebar/auth/logout', 'SidebarController@getLogout');
 Route::post('sidebar/auth/demoLogin', 'SidebarController@demoLogin');
 
+
+
 // Workspace pages.
 Route::group(['middleware' => 'auth'], function() {
+    Route::get('stages', 'StageProgressController@directToStage');
+    Route::get('stages/{stage_id}', 'StageProgressController@getOrRedirect');
 	// These pages do not make sense without a logged in user.
 	Route::get('workspace', 'WorkspaceController@viewPanel');
 	Route::get('workspace/projects', 'WorkspaceController@showProjects');
