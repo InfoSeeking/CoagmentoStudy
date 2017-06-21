@@ -70,8 +70,6 @@
                 <br>
             </div>
 
-            <br><br>
-
             <div class="form-group">
                 <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
                 <select multiple class="form-control" name="search_sources_v2[]">
@@ -113,7 +111,6 @@
                 <button type = "submit" class = "btn btn-default">Submit</button>
 
             </form>
-
 
 
             @if(count($errors))

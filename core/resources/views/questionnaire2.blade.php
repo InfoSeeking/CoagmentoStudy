@@ -24,7 +24,7 @@
                 
             <div class="form-group">
                 <label for="sel1">Select Year in College:</label>
-                <select class="form-control" id="sel1" name="college_year">
+                <select class="form-control" id="sel1" name="collegeYear">
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
@@ -39,20 +39,20 @@
 
             </form>
             
-<!--
-            <div class="alert alert-errror">
+            @if(count($errors))
+            <div class="alert alert-danger">
                 <ul>
-                
+
                     @foreach($errors->all() as $error)
-                    
+
                     <li>{{$error}}</li>
-                    
+
                     @endforeach
-                    
+
                 </ul>
-            
+
             </div>
--->
+            @endif
 
         </div>
 

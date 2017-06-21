@@ -38,7 +38,6 @@ class QuestionnaireTestController extends Controller
      */
     public function store(Request $request)
     {
-        //
 //        dd(request() -> all ());
         
         $post = new QuestionnaireTest;
@@ -67,13 +66,13 @@ class QuestionnaireTestController extends Controller
 
         $post -> searchTasks = request("searchTasks");
 
-
         $post -> collegeYear = request("collegeYear");
         
         $post -> search_sources_v2 = implode(',', request('search_sources_v2'));
 
         $post -> task_difficulty = request("task_difficulty");
 
+        
         //add here
 
         $post -> save();

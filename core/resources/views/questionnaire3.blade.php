@@ -39,7 +39,6 @@
 
             </form>
             
-<!--
             <div class="alert alert-errror">
                 <ul>
                 
@@ -52,7 +51,6 @@
                 </ul>
             
             </div>
--->
 
         </div>
 
