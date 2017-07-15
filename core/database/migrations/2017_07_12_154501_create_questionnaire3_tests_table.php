@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddColumnsToQuestionnaire3TestsTable extends Migration
+class CreateQuestionnaire3TestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class AddColumnsToQuestionnaire3TestsTable extends Migration
     public function up()
     {
         Schema::table('questionnaire3_tests', function (Blueprint $table) {
-            $table->integer('project_id')->unsigned();
-            $table->integer('user_id')->unsigned();
-            $table->integer('stages_id')->unsigned();
+            $table->increments('id');
+            $table->timestamps();
+            $table->enum('collegeYear', ['freshman', 'sophomore', 'junior', 'senior']) ->nullable();
         });
     }
 
@@ -27,9 +27,7 @@ class AddColumnsToQuestionnaire3TestsTable extends Migration
     public function down()
     {
         Schema::table('questionnaire3_tests', function (Blueprint $table) {
-            $table->dropColumn('project_id');
-            $table->dropColumn('user_id');
-            $table->dropColumn('stages_id');
+            Schema::drop('questionnaire3_tests');
         });
     }
 }

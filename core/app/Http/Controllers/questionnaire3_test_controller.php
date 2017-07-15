@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\StageProgressController;
-use App\Questionnaire2Test;
+use App\Questionnaire3Test;
 
-class questionnaire2_test_controller extends Controller
+class questionnaire3_test_controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,7 +42,7 @@ class questionnaire2_test_controller extends Controller
         //
 //        dd(request() -> all ());
         
-        $post = new Questionnaire2Test;
+        $post = new Questionnaire3Test;
 
         //validaiton:
         $this -> validate($request, [
