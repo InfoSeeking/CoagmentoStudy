@@ -13,8 +13,10 @@
 
         <div class="container">
   <h2>Questionnaire</h2>
+            <div class="container">
+                <div class="well">Please fill out this form as soon as possible</div>
+            </div>
 
-            <p>Gender:</p>
             <form method="POST" action="/questionnaire">
                 {{ csrf_field() }}
 

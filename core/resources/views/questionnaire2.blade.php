@@ -26,9 +26,9 @@
 </style>
 <body>
     <div class="bs-example">
-        <form>
-            <input type="text" class="form-control" placeholder="Please fill out this form as soon as possible." readonly="readonly">
-        </form>
+        <div class="container">
+            <div class="well">Please fill out this form as soon as possible</div>
+        </div>
     </div>
 </body>
             
