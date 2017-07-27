@@ -15,7 +15,7 @@
 
         <div class="container">
             
-            <h2>Questionnaire</h2>
+            <h2>Questionnaire 2</h2>
             
             <title>Example of Bootstrap 3 Readonly Inputs</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -27,6 +27,7 @@
     }
 </style>
 <body>
+    
     <div class="bs-example">
         <div class="container">
             <div class="well">Please fill out this form as soon as possible</div>
@@ -34,31 +35,13 @@
     </div>
 </body>
             
+            
             <form method="POST" action="/questionnaire2">
                 {{ csrf_field() }}
 
-            <label for="sel1">Gender:</label>
-            <form method="POST" action="/questionnaire">
-                {{ csrf_field() }}
-
-                <div class="form-group">
-                    {!! Form::text('username') !!}
-                </div>
                 
-                <br><br>
 
-
-                <div class="form-group">
-                    <label for="sel3">Mutiple select list (hold shift to select more than one):</label>
-                    {!!
-                     Form::select('animal',[
-                      'Cats' => ['leopard' => 'Leopard'],
-                      'Dogs' => ['spaniel' => 'Spaniel'],
-                     ],null,array('id'=>'sel3','class'=>'form-control'))
-                     !!}
-                </div>
-
-
+                <label for="sel1">Gender:</label>
                 <div class="radio">
                     <label><input type="radio" name="gender" value="male">Male</label>
                 </div>

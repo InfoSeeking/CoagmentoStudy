@@ -11,29 +11,36 @@
 
     <body>
 
-        <div class="container">
-  <h2>Questionnaire</h2>
+          <body>
 
-            <p>Gender:</p>
-            <form method="POST" action="/questionnaire">
+        <div class="container">
+            
+            <h2>Questionnaire</h2>
+            
+            <title>Example of Bootstrap 3 Readonly Inputs</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
+<body>
+    
+    <div class="bs-example">
+        <div class="container">
+            <div class="well">Please fill out this form as soon as possible</div>
+        </div>
+    </div>
+</body>
+            
+            
+            <form method="POST" action="/questionnaire3">
                 {{ csrf_field() }}
 
-                <div class="form-group">
-                    {!! Form::text('username') !!}
-                </div>
 
-
-                <div class="form-group">
-                    <label for="sel3">Mutiple select list (hold shift to select more than one):</label>
-                    {!!
-                     Form::select('animal',[
-                      'Cats' => ['leopard' => 'Leopard'],
-                      'Dogs' => ['spaniel' => 'Spaniel'],
-                     ],null,array('id'=>'sel3','class'=>'form-control'))
-                     !!}
-                </div>
-
-
+                <label for="sel1">Gender:</label>
                 <div class="radio">
                     <label><input type="radio" name="gender" value="male">Male</label>
                 </div>
@@ -44,7 +51,7 @@
 
                 <br><br>
 
-            <p>Search Sources:</p>
+            <label for="sel1">Search Sources:</label>
                 <div class="checkbox">
                     <label><input type="checkbox" name="searchSource[]" value="google">Google</label>
                 </div>
@@ -60,14 +67,14 @@
 
                 <br><br>
 
-            <p>Languge Used:</p>
+            <label for="sel1">Language Used:</label>
                 <div class="form-group">
                     <input type="text" name="language">
                 </div>
 
                 <br><br>
 
-            <p>Describe the search tasks you do on a daily basis:</p>
+            <label for="sel1">Descripe each search task you do on a daily basis:</label>
                 <div class="form-group">
                     <textarea class="form-control" rows="5" name="searchTasks"></textarea>
                 </div>
@@ -101,7 +108,7 @@
             <br><br>
 
 
-            <p>Rate the difficulty level of the task.</p>
+            <label for="sel1">Rate the difficulty level of the task:</label>
                 <div class="row">
                     <div class="col-xs-1" style="background-color:lavender;">Not at all Difficult</div>
                     <div class="col-xs-1" style="background-color:lavender;">Somewhat Difficult</div>
@@ -122,14 +129,15 @@
                     <div class="col-xs-1" style="background-color:lightgray;"><center><input class="radio-inline" type="radio" name="task_difficulty" value="extremely_difficult"></center>
                     </div>
                 </div>
+                
+            <br><br>
 
-                <br><br>
-
-                <button type = "submit" class = "btn btn-success">Submit</button>
+            <button type = "submit" class = "btn btn-success">Submit</button>
+                
+            <br><br>
 
             </form>
-
-
+            
             @if(count($errors))
             <div class="alert alert-danger">
                 <ul>

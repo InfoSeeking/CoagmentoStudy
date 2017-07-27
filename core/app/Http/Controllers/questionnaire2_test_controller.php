@@ -46,10 +46,28 @@ class questionnaire2_test_controller extends Controller
 
         //validaiton:
         $this -> validate($request, [
+            'gender' => 'required',
+            'searchSource' => 'required',
+            'language' => 'required',
+            'searchTasks' => 'required',
             'collegeYear' => 'required',
+
+            'search_sources_v2' => 'required',
+            'task_difficulty' => 'required'
         ]);
 
+        $post -> gender = request("gender");
+        $post -> searchSource = implode(',', array_values(request("searchSource")));
+
+        $post -> language = request("language");
+
+        $post -> searchTasks = request("searchTasks");
+
         $post -> collegeYear = request("collegeYear");
+        
+        $post -> search_sources_v2 = implode(',', request('search_sources_v2'));
+
+        $post -> task_difficulty = request("task_difficulty");
 
         //add here
 
