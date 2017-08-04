@@ -144,7 +144,14 @@ Route::group(['middleware' => 'api.optional.auth'], function(){
 	Route::get('api/v1/docs/{doc_id}/text', 'Api\DocController@getText');
 });
 
-//For first questionnaire
+//Welcome page:
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::post('/welcome', 'QuestionnaireTestController@store');
+
+//First questionnaire
 Route::get('/questionnaire', function () {
     return view('questionnaire');
 });

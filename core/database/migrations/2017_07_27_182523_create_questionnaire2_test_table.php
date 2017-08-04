@@ -25,6 +25,8 @@ class CreateQuestionnaire2TestTable extends Migration
             $table->string('searchTasks') ->nullable();
             
             //college year
+            
+            
             //difficulty
             
         });

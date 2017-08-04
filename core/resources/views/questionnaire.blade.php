@@ -36,7 +36,7 @@
 </body>
             
             
-            <form method="POST" action="/questionnaire3">
+            <form method="POST" action="/questionnaire">
                 {{ csrf_field() }}
 
 
